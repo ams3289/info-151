@@ -1,6 +1,7 @@
 /* =============
     Packages
 ============= */
+@use "../helpers";
 
 
 
@@ -36,14 +37,25 @@
 
             p{
                 color: var(--nightblue);
+                font-weight: 600;
+                font-size: helpers.rem-calc(20);
+                line-height: helpers.rem-calc(28);
             }
 
             h3{
                 color: var(--aqua);
+                font-weight: 600;
+                font-size: helpers.rem-calc(14);
+                line-height: helpers.rem-calc(28);
+
             }
 
             h4{
                 color: var(--grey);
+                font-weight: 600;
+                font-size: helpers.rem-calc(14);
+                line-height: helpers.rem-calc(28);
+
             }
         }
 
