@@ -600,3 +600,24 @@ textarea {
   line-height: 1.75rem;
   margin: 16px 24px 48px;
 }
+
+/* =============
+    About
+============= */
+#about {
+  background-color: var(--white);
+  padding: 60px 24px 16px;
+}
+#about section h3 {
+  color: var(--nightblue);
+  font-weight: 600;
+  line-height: 1.75rem;
+  font-size: 1.25rem;
+  margin-top: 16px;
+}
+#about section p {
+  color: var(--grey);
+  font-weight: 600;
+  line-height: 1.75rem;
+  margin: 16px 0px;
+}
