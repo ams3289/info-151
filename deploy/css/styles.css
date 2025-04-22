@@ -621,3 +621,43 @@ textarea {
   line-height: 1.75rem;
   margin: 16px 0px;
 }
+
+/* =============
+    Process
+============= */
+#process {
+  background-color: var(--white);
+  padding: 110px 24px 16px;
+}
+#process #top-content {
+  text-align: center;
+}
+#process #top-content p {
+  color: var(--grey);
+  font-weight: 600;
+  line-height: 1.75rem;
+  margin: 16px 24px 24px;
+}
+#process #work-card-container .work-card {
+  background-color: var(--white);
+  border: 1px solid #F5F5F7;
+  margin-bottom: 48px;
+  padding: 16px;
+  border-radius: 14px;
+}
+#process #work-card-container .work-card p {
+  color: var(--grey);
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  margin-left: 30;
+  margin-right: 30;
+  margin-bottom: 30;
+}
+#process #work-card-container .work-card h3 {
+  color: var(--nightblue);
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.125rem;
+  margin: 50px 0px 10px;
+}
