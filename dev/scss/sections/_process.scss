@@ -9,6 +9,9 @@
     padding: 110px 24px 16px;
 
     #top-content{
+
+        
+
         text-align: center;
 
 
@@ -23,7 +26,29 @@
 
 
     #work-card-container{
+
+        @include helpers.md{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas: "card-1 card-1 card-2 card-2"
+                                 "...    card-3 card-3 ...";
+            gap: 24px;
+
+        }
+
+        @include helpers.xl{
+            max-width: 1200px;
+            margin: 0 auto;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: "card-1 card-2 card-3";
+            gap: 45px;
+        }
+
+
         .work-card{
+
+           
+
             background-color: var(--white);
             border: 1px solid #F5F5F7;
             margin-bottom: 48px;
@@ -51,7 +76,29 @@
 
             }
 
-            
         }
+        
+        #card-1{
+            @include helpers.md{
+                grid-area: card-1;
+                
+            }
+        }
+
+        #card-2{
+            @include helpers.md{
+                grid-area: card-2;
+            }
+        }
+
+        #card-3{
+            @include helpers.md{
+                grid-area: card-3;
+            }
+
+        }
+
+            
+        
     }
 }

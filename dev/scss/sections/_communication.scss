@@ -7,6 +7,10 @@
     background-color: var(--white);
     padding: 107px 24px 340.76px;
 
+    @include helpers.xl{
+        padding: 60px 20vw;
+    }
+
     #top-content{
         text-align: center;
     }
