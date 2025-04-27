@@ -17,13 +17,14 @@
 
         @include helpers.lg{
             display: grid;
-            grid-template-columns: 65% auto;
+            grid-template-columns: 60% auto;
             padding: 0px 0px;
             gap: 60px;
 
         }
 
         @include helpers.xl{
+            grid-template-columns: 65% auto;
             width: 1200px;
             margin: 0 auto;
         }
@@ -74,7 +75,7 @@
 
             img{
                //margin-top: -120px; 
-               object-fit: fill;
+               //object-fit: cover;
             }
         }
     } 

@@ -705,14 +705,16 @@ textarea {
   #newsletter #newsletter-content {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 65% 60px auto;
-    grid-template-columns: 65% auto;
+    -ms-grid-columns: 60% 60px auto;
+    grid-template-columns: 60% auto;
     padding: 0px 0px;
     gap: 60px;
   }
 }
 @media (min-width: 1200px) {
   #newsletter #newsletter-content {
+    -ms-grid-columns: 65% auto;
+    grid-template-columns: 65% auto;
     width: 1200px;
     margin: 0 auto;
   }
@@ -748,11 +750,6 @@ textarea {
     margin-top: -50px;
   }
 }
-#newsletter #newsletter-content aside img {
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-
 /* =============
     Communication
 ============= */
