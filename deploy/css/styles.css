@@ -935,14 +935,30 @@ textarea {
     padding: 0;
   }
 }
-#about #about-content-container section h3 {
+#about #about-content-container section p {
+  color: var(--grey);
+  font-weight: 600;
+  line-height: 1.75rem;
+  margin: 16px 0px;
+}
+#about #about-content-container section .about-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 16px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+#about #about-content-container section .about-item h3 {
   color: var(--nightblue);
   font-weight: 600;
   line-height: 1.75rem;
   font-size: 1.25rem;
-  margin-top: 16px;
 }
-#about #about-content-container section p {
+#about #about-content-container section .about-item p {
   color: var(--grey);
   font-weight: 600;
   line-height: 1.75rem;

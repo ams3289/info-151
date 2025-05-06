@@ -30,6 +30,7 @@
         }
 
         section{
+            
 
             @include helpers.md{
                 grid-area: about-content;
@@ -44,22 +45,40 @@
                 padding: 0;
             }
 
-            h3{
-                color: var(--nightblue);
-                font-weight: 600;
-                line-height: helpers.rem-calc(28);
-                font-size: helpers.rem-calc(20);
-                margin-top: 16px;
-            }
-    
-    
             p{
                 color: var(--grey);
                 font-weight: 600;
                 line-height: helpers.rem-calc(28);
-                margin: 16px 0px;
-    
+                margin: 16px 0px; 
             }
+
+            .about-item{
+                display: flex;
+                align-items:flex-start;
+                gap: 16px;
+                margin-top: 40px;
+                margin-bottom: 30px;
+
+                h3{
+                    color: var(--nightblue);
+                    font-weight: 600;
+                    line-height: helpers.rem-calc(28);
+                    font-size: helpers.rem-calc(20);
+                }
+        
+        
+                p{
+                    color: var(--grey);
+                    font-weight: 600;
+                    line-height: helpers.rem-calc(28);
+                    margin: 16px 0px;
+        
+                }
+            }
+
+            
+
+            
         }
 
         aside{
