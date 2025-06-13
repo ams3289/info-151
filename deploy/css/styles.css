@@ -363,3 +363,45 @@ textarea {
 /* =============
     Footer
 ============= */
+/* =============
+    Home
+============= */
+#home {
+  background-color: var(--redBrown);
+  padding: 60px 24px 16px;
+}
+
+#home-content-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 2rem auto;
+  grid-template-columns: 40% auto;
+      grid-template-areas: "home-content home-img";
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+section {
+  padding: 0;
+}
+section h1 {
+  font-size: 53.3px;
+}
+section p {
+  color: var(--darkGrey);
+  font-weight: 600;
+  font-size: large;
+}
+
+aside {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: home-img;
+}
+
+aside img {
+  width: 490px;
+  height: 650px;
+  border-radius: 16px;
+}
