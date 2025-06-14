@@ -494,3 +494,64 @@ aside img {
   max-width: 1000px;
   margin: 0 auto;
 }
+
+/* =============
+    Associations
+============= */
+.associations {
+  background-color: var(--cream);
+  padding: 60px 24px 16px;
+}
+.associations h2 {
+  text-align: center;
+  font-size: 36px;
+  color: var(--darkGrey);
+  margin-bottom: 2rem;
+}
+.associations .association-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2rem 1fr 2rem 1fr 2rem 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.associations .association-card {
+  background-color: var(--white);
+  border: 1px solid var(--peachCream);
+  border-radius: 16px;
+  padding: 20px;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.associations .association-card:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+.associations .association-card h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.associations .association-card p {
+  font-size: 16px;
+  color: var(--darkGrey);
+  margin-bottom: 12px;
+}
+.associations .association-card .btn {
+  display: inline-block;
+  background-color: var(--redBrown);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+.associations .association-card .btn:hover {
+  background-color: #8c3c2b;
+}
