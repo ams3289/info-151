@@ -555,3 +555,50 @@ aside img {
 .associations .association-card .btn:hover {
   background-color: #8c3c2b;
 }
+
+/* =============
+    Contact
+============= */
+.contact {
+  background-color: var(--peachCream);
+  padding: 60px 24px 16px;
+  text-align: center;
+}
+.contact h2 {
+  font-size: 36px;
+  color: var(--darkGrey);
+  margin-bottom: 2rem;
+}
+.contact .contact-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2rem 1fr 2rem 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto 2rem auto;
+  text-align: left;
+}
+.contact .contact-grid p {
+  font-size: 16px;
+  color: var(--darkGrey);
+  font-weight: 500;
+  line-height: 1.6;
+}
+.contact .contact-grid p a {
+  color: var(--redBrown);
+  text-decoration: underline;
+  font-weight: 600;
+}
+.contact .contact-grid p a:hover {
+  color: #8c3c2b;
+}
+.contact .contact-img {
+  margin-top: 2rem;
+}
+.contact .contact-img img {
+  width: 350px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
