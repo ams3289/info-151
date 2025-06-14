@@ -29,8 +29,7 @@
         border: 1px solid var(--peachCream);
         border-radius: 16px;
         padding: 20px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-        transition: transform 0.3s ease;
+        
 
         &:hover {
             transform:translateY(-5px);
@@ -55,7 +54,7 @@
             padding: 10px 16px;
             border-radius: 8px;
             font-weight: bold;
-            transition: background-color 0.3s ease;
+            
 
             &:hover {
                 background-color: #8c3c2b;
