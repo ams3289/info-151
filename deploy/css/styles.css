@@ -320,6 +320,7 @@ template {
   --brown: #5f5447;
   --darkGrey: #3b3b3b;
   --cream: #e4dbcf;
+  --peachCream:#f4e9dc;
 }
 
 /* ---------------- Font Sizing ---------------- */
@@ -447,4 +448,49 @@ aside img {
   width: 490px;
   height: 650px;
   border-radius: 16px;
+}
+
+/* =============
+    Resume
+============= */
+#resume {
+  background-color: var(--peachCream);
+  padding: 60px 24px 16px;
+}
+#resume h1.section-title {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+#resume h2 {
+  font-size: 32px;
+  margin-top: 40px;
+  color: var(--darkGrey);
+}
+#resume h3 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+#resume h4 {
+  font-size: 20px;
+  margin-top: 16px;
+}
+#resume p, #resume li {
+  font-size: 16px;
+  color: var(--darkGrey);
+  font-weight: 500;
+  line-height: 1.6;
+}
+#resume a {
+  color: var(--redBrown);
+  text-decoration: underline;
+  font-weight: 600;
+}
+#resume ul {
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+  list-style-type: disc;
+}
+#resume #resume-content-container {
+  max-width: 1000px;
+  margin: 0 auto;
 }
