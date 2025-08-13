@@ -1,0 +1,64 @@
+/* =============
+    Associations
+============= */
+@use "../helpers";
+
+.associations{
+    background-color: var(--cream);
+    padding: 60px 24px 16px;
+
+    h2{
+        text-align: center;
+        font-size: 36px;
+        color: var(--darkGrey);
+        margin-bottom: 2rem;
+
+    }
+
+    .association-cards {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 2rem;
+        max-width: 1000px;
+        margin: 0 auto;
+
+    }
+
+    .association-card {
+        background-color: var(--white);
+        border: 1px solid var(--peachCream);
+        border-radius: 16px;
+        padding: 20px;
+        
+
+        &:hover {
+            transform:translateY(-5px);
+        }
+
+        h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+
+        }
+
+        p {
+            font-size: 16px;
+            color: var(--darkGrey);
+            margin-bottom: 12px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--redBrown);
+            color: white;
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-weight: bold;
+            
+
+            &:hover {
+                background-color: #8c3c2b;
+            }
+        }
+    }
+}

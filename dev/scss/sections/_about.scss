@@ -1,0 +1,51 @@
+/* =============
+    about
+============= */
+@use "../helpers";
+
+#about {
+    background-color: var(--cream);
+    padding: 60px 24px 16px;
+
+
+}
+
+    #about-content-container{
+        display: grid;
+        grid-template-columns: auto 40%;
+        grid-template-areas: "about-img about-content";
+
+        max-width:1200px;
+        margin: 0 auto;
+        gap: 2rem;
+    }
+
+    section{
+        padding: 0;
+
+        h1{
+            font-size: 53.3px;
+        }
+        
+        
+        p{
+            color: var(--darkGrey);
+            font-weight: 600;
+            font-size: 30px;
+            
+        }
+
+
+        
+    }
+
+    aside{
+        grid-area: home-img;
+    }
+
+    aside img{
+        width: 490px;
+        height: 650px;
+        border-radius: 16px;
+       
+    }
