@@ -1,0 +1,93 @@
+/* =============
+    About
+============= */
+@use "../helpers";
+
+#about{
+    background-color: var(--white);
+    padding: 60px 24px 16px;
+
+    @include helpers.xl{
+        padding: 100px 24px;
+    
+    }
+
+    #about-content-container{
+
+        @include helpers.md{
+            display: grid;
+            grid-template-areas: "about-content"
+                                "about-img";
+        }
+
+    
+        @include helpers.xl{
+            grid-template-columns: 40% auto;
+           grid-template-areas: "about-content about-img"; 
+    
+           max-width: 1200px;
+           margin: 0 auto;
+        }
+
+        section{
+            
+
+            @include helpers.md{
+                grid-area: about-content;
+                padding: 0 5vw 69px;
+            }
+
+            @include helpers.lg{
+                padding: 0 25Svw;
+            }
+
+            @include helpers.xl{
+                padding: 0;
+            }
+
+            p{
+                color: var(--grey);
+                font-weight: 600;
+                line-height: helpers.rem-calc(28);
+                margin: 16px 0px; 
+            }
+
+            .about-item{
+                display: flex;
+                align-items:flex-start;
+                gap: 16px;
+                margin-top: 40px;
+                margin-bottom: 30px;
+
+                h3{
+                    color: var(--nightblue);
+                    font-weight: 600;
+                    line-height: helpers.rem-calc(28);
+                    font-size: helpers.rem-calc(20);
+                }
+        
+        
+                p{
+                    color: var(--grey);
+                    font-weight: 600;
+                    line-height: helpers.rem-calc(28);
+                    margin: 16px 0px;
+        
+                }
+            }
+
+            
+
+            
+        }
+
+        aside{
+            @include helpers.md{
+                grid-area: about-img;
+            }
+        }
+    }
+
+
+    
+}

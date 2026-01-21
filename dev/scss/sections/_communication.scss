@@ -1,0 +1,25 @@
+/* =============
+    Communication
+============= */
+@use "../helpers";
+
+#communication{
+    background-color: var(--white);
+    padding: 107px 24px 340.76px;
+
+    @include helpers.xl{
+        padding: 60px 20vw;
+    }
+
+    #top-content{
+        text-align: center;
+    }
+    p{
+        color: var(--grey);
+        font-weight: 600;
+        line-height: helpers.rem-calc(28);
+        margin: 16px 24px 48px;
+    }
+
+
+}
